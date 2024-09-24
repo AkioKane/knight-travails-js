@@ -28,11 +28,7 @@ function knightMoves([x, y], [a, b]) {
     });
     currentNode = q.shift();
   }
-  console.log(
-    `=> You made it in ${currentNode.path.length - 1} moves!  Here's your path:`
-  );
-  currentNode.path.forEach((pos) => {
-    console.log(pos);
-  });
+  console.log(`=> You made it in ${currentNode.path.length - 1} moves!  Here's your path:`);
+  currentNode.path.forEach((pos) => {console.log(pos);});
 }
 knightMoves([3, 3], [4, 3]);
